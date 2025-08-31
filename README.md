@@ -1,60 +1,71 @@
-# newslook
+📰 AI News Digest (India-Specific)
 
-A modern AI-powered global news summarizer and feed, now called 'newslook'.
+An AI-powered news aggregator that fetches top Indian news and generates concise summaries using OpenAI.
+The app is designed to help users stay updated with the latest news in a quick, clutter-free, and intelligent way.
 
-- **Frontend**: React + Vite + TypeScript
-- **Backend**: Node.js + Express
-- **APIs**:
-  - News: NewsAPI.org (top headlines, category, search)
-  - AI Summaries: OpenAI (optional; can be disabled)
+✨ Features
 
-## Quick Start
+🔍 Fetches real-time Indian news using NewsAPI
 
-### 1) Backend
+🤖 Generates AI-based summaries with OpenAI
 
-```bash
-cd backend
-cp .env.example .env
-# edit .env to add keys
+🗂️ Categorized news (Politics, Sports, Technology, Business, etc.)
+
+🌐 Simple and responsive web interface
+
+💾 Secure API key handling via .env
+
+(Optional future) 🎙️ Text-to-Speech news summaries in Hindi/English
+
+🛠️ Tech Stack
+
+Frontend: React / Vite
+
+Backend: Node.js, Express
+
+APIs: NewsAPI, OpenAI API
+
+Deployment: Vercel (frontend), Render/Heroku (backend)
+
+📸 Screenshots
+
+
+![Homepage Screenshot]
+<img width="1857" height="859" alt="image" src="https://github.com/user-attachments/assets/be47aaab-50e3-4f27-b88b-dda091827b82" />
+
+![News Summary Screenshot]
+<img width="393" height="741" alt="image" src="https://github.com/user-attachments/assets/537c900f-94e7-4992-b9fb-73c2c380e20d" />
+
+
+🚀 Getting Started
+1. Clone the repository
+git clone https://github.com/dmrworse007/NEWS-LOOK.git
+cd NEWS-LOOK
+
+2. Install dependencies
 npm install
-npm run dev
-```
 
-The backend starts on `http://localhost:8080`.
+3. Set up environment variables
 
-### 2) Frontend
+Create a .env file in the root folder and add:
 
-```bash
-cd frontend
-cp .env.example .env
-# (optional) set VITE_API_BASE if your backend is not localhost:8080
-npm install
-npm run dev
-```
-
-The frontend starts on `http://localhost:5173`.
-
-### Environment Variables
-
-#### backend/.env
-```
 NEWS_API_KEY=your_newsapi_key_here
-OPENAI_API_KEY=your_openai_key_here   # optional; leave empty to disable summaries
-PORT=8080
-ALLOWED_ORIGIN=http://localhost:5173
-```
+OPENAI_API_KEY=your_openai_key_here
+(for the time being i have made the api key visible for ease)
 
-#### frontend/.env
-```
-VITE_API_BASE=http://localhost:8080
-```
+4. Run the app
+npm run dev
 
-### Deploy (free-tier friendly)
+📌 Future Improvements
 
-- Frontend: Vercel / Netlify
-- Backend: Render / Railway
+Multi-language support (Hindi, Bengali, etc.)
 
-Set the same environment variables on your hosting providers.
+Personalized news feed based on user preferences
+
+Voice-enabled summaries (Text-to-Speech)
+
+Save/favorite articles
+
 
 ### Notes
 
