@@ -1,4 +1,4 @@
-📰 AI News Digest (India-Specific)
+📰 AI News Digest
 
 An AI-powered news aggregator that fetches top Indian news and generates concise summaries using OpenAI.
 The app is designed to help users stay updated with the latest news in a quick, clutter-free, and intelligent way.
